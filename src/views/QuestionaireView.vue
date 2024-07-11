@@ -18,14 +18,14 @@ const handleQuestionSelection = (idx, score) => {
 
 const handleQuestionaireSubmit = () => {
   const total = Object.values(answers.value).reduce((acc, curr) => acc + curr, 0);
-  //if (Object.keys(answers.value).length == 10 && total > 0) {
+  if (Object.keys(answers.value).length == 10 && total > 0) {
     profile.value = getData.value.profiles.find(profile => {
       if (total >= profile.min_score && total <= profile.max_score) {
         return profile;
       }
     });
-  router.push({ name: 'profile', params: { id: profile.value.id } });
-  //}
+    router.push({ name: 'profile', params: { id: profile.value.id } });
+  }
 }
 </script>
 
