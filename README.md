@@ -1,20 +1,12 @@
-# hype-ai-sanity-check
+# Hype AI Sanity Check
 
-This template should help get you started developing with Vue 3 in Vite.
+This is just a toy website with a few questions, to check how hyped you are about AI ... have fun!
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+![The Techno Prophet](https://github.com/rdenadai/hype_ai_sanity_check/blob/main/public/assets/profile/024da774-b865-4038-8eeb-719cab379eff.png?raw=true)
 
 ## Project Setup
 
-```sh
-bun install
-```
+This project is built using Bun, Vue.js and Tailwind CSS.
 
 ### Compile and Hot-Reload for Development
 
@@ -22,8 +14,10 @@ bun install
 bun dev
 ```
 
-### Compile and Minify for Production
+### Production Build
+
+This will try to build the project and run it in a Docker container. Please take into account, that if you don't have a certificate for your domain, you will need to change the nginx configuration in the `docker-compose.yml` file to create the certificate first and then enable the HTTPS configuration.
 
 ```sh
-bun run build
+bun run build && docker-compose down && docker-compose up
 ```
