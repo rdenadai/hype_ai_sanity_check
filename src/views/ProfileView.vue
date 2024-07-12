@@ -18,7 +18,7 @@ const profile = computed(
 const score = computed(() => route.params.score);
 const twitterUrl = computed(() => {
   const text = `${profile?.value?.name} (${score.value} pts): ${profile?.value?.description}`
-  return `https://twitter.com/intent/tweet?url=aihypesanitycheck.tech/${profile?.value?.id}/${score.value}&text=${text}&hashtags=ai,hype,fallacy,anthropomorphism`
+  return `https://twitter.com/intent/tweet?url=https://www.aihypesanitycheck.tech/${profile?.value?.id}/${score.value}&text=${text}&hashtags=ai,hype,fallacy,anthropomorphism`
 });
 
 const profileImgUrl = computed(() => `/assets/profile/${profile.value.id}.png`);
