@@ -10,9 +10,10 @@ const getData = computed(() => data?.[store.language]);
 </script>
 
 <template>
-  <header class="text-center text-4xl font-bold my-10">
-    <span>{{ getData.title }}</span>
-    <div class="flex mt-10 place-content-end">
+  <header class="text-center my-10">
+    <p class="text-4xl font-bold">{{ getData.title }}</p>
+    <p class="text-xl text-justify mt-10">{{ getData.description }}</p>
+    <div class="flex mt-10 place-content-center lg:place-content-end">
       <img
         class="mx-2 cursor-pointer"
         src="/assets/usa.png"

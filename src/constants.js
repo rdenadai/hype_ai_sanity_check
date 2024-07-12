@@ -2,8 +2,12 @@ export const data = {
   portuguese: {
     head: "Hyper AI Sanity Check",
     title: "Qual é a sua Personalidade de IA?",
+    description:
+      'Quer descobrir o quanto você está ligado no mundo da Inteligência Artificial? Este questionário vai "medir" seu entusiasmo e crenças sobre IA. Com 10 perguntas de múltipla escolha, abrange desde percepções sobre o domínio da IA até a confiança em decisões tomadas por algoritmos.',
+    tweeterButton: "Compartilhar no Tweeter (X)",
     submitButtonText: "Ver Resultados",
     references: "Referências",
+    errorMessage: "Por favor, responda a todas as perguntas.",
     questionnaire: [
       {
         question: "Em quantos anos você acredita que a IA vai dominar o mundo?",
@@ -153,7 +157,7 @@ export const data = {
       {
         id: "5a2bc38c-487b-4361-b743-5d38f08c9549",
         name: "O Cético Sossegado",
-        min_score: 10,
+        min_score: 0,
         max_score: 19,
         description:
           "Você acha que a IA é útil, mas acredita que todo o hype é exagerado. Prefere esperar para ver como as coisas realmente vão se desenrolar.",
@@ -163,8 +167,12 @@ export const data = {
   english: {
     head: "Hyper AI Sanity Check",
     title: "What's Your AI Personality?",
+    description:
+      'Want to find out how connected you are to the world of Artificial Intelligence? This quiz will "measure" your enthusiasm and beliefs about AI. With 10 multiple-choice questions, it ranges from insights into the domain of AI to confidence in decisions made by algorithms.',
+    tweeterButton: "Share on Tweeter (X)",
     submitButtonText: "Get Your Results",
     references: "References",
+    errorMessage: "Please answer all questions.",
     questionnaire: [
       {
         question:
@@ -312,7 +320,7 @@ export const data = {
       {
         id: "5a2bc38c-487b-4361-b743-5d38f08c9549",
         name: "The Relaxed Skeptic",
-        min_score: 10,
+        min_score: 0,
         max_score: 19,
         description:
           "You think AI is useful but believe all the hype is exaggerated. You prefer to wait and see how things actually unfold.",

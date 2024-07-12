@@ -11,7 +11,7 @@ const router = createRouter({
       component: QuestionaireView,
     },
     {
-      path: "/:id",
+      path: "/:id/:score",
       name: "profile",
       component: ProfileView,
     },
