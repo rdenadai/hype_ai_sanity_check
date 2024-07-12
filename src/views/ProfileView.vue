@@ -7,7 +7,6 @@ import { data } from "../constants.js";
 const store = useLanguageStore();
 const route = useRoute();
 
-const domain = computed(() => window.location.host);
 const getData = computed(() => data?.[store.language]);
 const profile = computed(
   () =>
