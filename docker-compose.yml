@@ -11,8 +11,9 @@ services:
     volumes:
       - ./dist:/usr/share/nginx/html
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
       - /home/ubuntu/certbot/www:/var/www/certbot/:ro
-      - /home/ubuntu/certbot/conf/:/etc/nginx/ssl/:ro
+      - /home/ubuntu/certbot/conf:/etc/nginx/ssl/:ro
     logging:
       options:
         max-size: "10m"
@@ -22,5 +23,5 @@ services:
     restart: unless-stopped
     image: certbot/certbot:latest
     volumes:
-      - /home/ubuntu/certbot/www/:/var/www/certbot/:rw
-      - /home/ubuntu/certbot/conf/:/etc/letsencrypt/:rw
+      - /home/ubuntu/certbot/www:/var/www/certbot/:rw
+      - /home/ubuntu/certbot/conf:/etc/letsencrypt/:rw
